@@ -1,0 +1,13 @@
+version: '1'
+services:
+  limesurvey:
+    ports:
+      - "80:80"
+    volumes:
+      - mysql:/var/lib/mysql
+      - upload:/apps/upload
+    image:
+      wratajski/limesurveydocker_wsb
+volumes:
+  mysql:
+  upload:
