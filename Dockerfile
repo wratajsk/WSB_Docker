@@ -25,7 +25,7 @@ RUN cp -r /apps/upload/* /uploadlime ; \
 
 RUN chown www-data:www-data /var/lib/php5
 
-ADD apache_default /etc/apache2/sites-available/000-default.conf
+ADD apache /etc/apache2/sites-available/000-default.conf
 
 
 
