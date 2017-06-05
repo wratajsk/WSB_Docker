@@ -1,4 +1,4 @@
- Install tutum/lamp to set up PHP/MYSql environment with additional
+# Install tutum/lamp to set up PHP/MYSql environment with additional
 # packages and updates. At the end cleans memory to regain diskspace
 
 FROM tutum/lamp:latest
