@@ -1,4 +1,4 @@
-# Install tutum/lamp to set up PHP/MYSql environment with additional
+ Install tutum/lamp to set up PHP/MYSql environment with additional
 # packages and updates. At the end cleans memory to regain diskspace
 
 FROM tutum/lamp:latest
@@ -12,12 +12,12 @@ RUN apt-get update && \
 # Before installation clear folders. Next get LimeSurvey installation package
 # and extract to the folder.
 
-RUN rm -rf /apps
+RUN rm -rf /app
 ADD limesurvey2651.tar.bz2 /
 # ADD limesurvey_unstable_.tar.bz /
-RUN mv limesurvey_docker apps; \
+RUN mv limesurvey_docker app; \
 	mkdir -p /uploadlime; \
-	chown -R www-data:www-data /apps
+	chown -R www-data:www-data /app
 
 
 RUN cp -r /apps/upload/* /uploadlime ; \
