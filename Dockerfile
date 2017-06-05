@@ -15,7 +15,7 @@ RUN apt-get update && \
 RUN rm -rf /app
 ADD limesurvey2651.tar.bz2 /
 # ADD limesurvey_unstable_.tar.bz /
-RUN mv limesurvey_docker app; \
+RUN mv limesurvey app; \
 	mkdir -p /uploadlime; \
 	chown -R www-data:www-data /app
 
