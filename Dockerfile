@@ -1,7 +1,7 @@
 # Install tutum/lamp to set up PHP/MYSql environment with additional
 # packages and updates. At the end cleans memory to regain diskspace
 
-FROM tutum/lamp:latest
+FROM tutum/lamp
 
 RUN apt-get update && \
 	apt-get -y install php5-gd php5-ldap php5-imap php5-curl php5-pgsql php5-mcrypt sendmail && \
