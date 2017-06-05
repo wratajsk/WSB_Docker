@@ -20,7 +20,7 @@ RUN mv limesurvey_docker app; \
 	chown -R www-data:www-data /app
 
 
-RUN cp -r /apps/upload/* /uploadlime ; \
+RUN cp -r /app/upload/* /uploadlime ; \
 	chown -R www-data:www-data /uploadlime
 
 RUN chown www-data:www-data /var/lib/php5
